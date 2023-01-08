@@ -1,0 +1,45 @@
+.card_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.part-1{
+    margin-top: 1rem;
+    width: 50%;
+}
+.part-2{
+    margin-top: 1rem;
+    width: 50%;
+}
+.cardNews{
+    display: flex;
+    flex-direction: row !important;
+    margin-bottom: 1rem;
+}
+.part-1 > p , .part-1 > h4{
+    width: 80%;
+    margin-top: 1rem;
+    text-align: justify;
+}
+.part-1 > img{
+    width: 30rem;
+    height: 25rem;
+}
+.cardNews > img{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
+}
+
+
+
+@media screen and (max-width: 948px) {
+    .card_grid{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 730px) {
+    .card_grid{
+        place-items: center;
+        grid-template-columns: auto;
+    }
+}
